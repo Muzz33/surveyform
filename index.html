@@ -1,131 +1,75 @@
-<html>
-<head>
-    <title>work</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
-        header {
-            background-color: #2ecc71;
-            padding: 10px 20px;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        header div {
-            font-weight: bold;
-        }
-        header nav a {
-            color: white;
-            
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
-        }
-        .hero {
-            
-                text-align: center;
-                margin: 111px 0;
-                padding: 70px 38px 40px 50px;
-            };
+<html> 
+    <head>
+        <title>FORM</title>
+    </head>
+    <body style="background-image: url(nature.jpg);background-repeat: no-repeat;background-size: cover;">
         
-        .hero button {
-            background-color: #1f0663;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            font-size: 18px;
-            border-radius: 3px;
-            
-        }
-        
-    
-        .about {
-            background-color: #2ecc71;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        .about h2 {
-            margin-bottom: 10px;
-        }
-        .team {
-            text-align: center;
-            padding: 20px 0;
-        }
-        .team .description {
-            margin-bottom: 20px;
-        }
-        .team-members {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .team-member {
-            background-color: #f4f4f4;
-            padding: 20px;
-            border-radius: 5px;
-            width: 200px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        }
-        .team-member:nth-child(1) {
-            background-color: #f8d7da;
-        }
-        .team-member:nth-child(2) {
-            background-color: #d4edda;
-        }
-        .team-member:nth-child(3) {
-            background-color: #fff3cd;
-        }
-        .team-member:nth-child(4) {
-            background-color: #d1ecf1;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div>YOUR LOGO</div>
-        <nav>
-            <a href="#">HOME</a>
-            <a href="#">ABOUT</a>
-            <a href="#">TESTIMONIALS</a>
-            <a href="#">PRICING</a>
-            <a href="#">CONTACT</a>
-            <a href="#">SOCIAL</a>
-        </nav>
-    </header>
-    <div class="hero">
-        <button style="background-color: rgb(57, 57, 175); color: #d1ecf1;">THIS TEMPLATE IS ALIVE</button>
-    </div>
-    <section class="about">
-        <h2>About Our Team</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </section>
-    <section class="team">
-        <h2>OUR TEAM MEMBERS</h2>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.</p>
-        <div class="team-members">
-            <div class="team-member">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit sem vel ipsum elementum venenatis.</p>
-            </div>
-            <div class="team-member">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit sem vel ipsum elementum venenatis.</p>
-            </div>
-            <div class="team-member">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit sem vel ipsum elementum venenatis.</p>
-            </div>
-            <div class="team-member">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit sem vel ipsum elementum venenatis.</p>
-            </div>
+        <h1 style="color: rgb(61, 201, 10);text-align: center;">SURVEY FORM</h1>
+        <div style="width:680px;height: 632px;background-color: rgba(247, 247, 247, 0.579);margin-left: 400px;border-radius: 10px;border-color: gray;border: 1px dashed;">
+            <form action="submithw.html" method="post" enctype="multipart/form-data" target="_blank">
+            <table cellpadding="11px">
+                <tr>
+                    <td  colspan="2" style="text-align: center;">Let us Know how we can improve</td>
+                </tr>
+                <tr>
+                    <td><label style="margin-left: 338px;">Name</label></td>
+                    <td><input type="text" name="name" placeholder="Enter your name" required ></td>
+                </tr>
+                <tr>
+                    <td><label style="margin-left: 340px;">Email</label></td>
+                    <td><input type="email" name="email" placeholder="Enter your Email" required></td>
+                </tr>
+                <tr>
+                    <td><label style="margin-left: 350px;">Age</label></td>
+                    <td><input type="number" name="age" placeholder="Age" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td><label style="margin-left: 79px;">Which option best describes your current role?</label></td>
+                    <td><select id="Which option best describes your current role?">
+                        <option value="Student">Student</option>
+                        <option value="developer">developer</option>
+                        <option value="ui/ux designer">ui/ux designer</option>
+                        <option value="software tester">software tester</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label style="margin-left: 79px;">How likely is that you would recommend this program to a friend?</label></td>
+                    <td><input type="radio" name="How likely is that you would recommend this program to a friend?" value="Definitely">Definitely<br>
+                        <input type="radio" name="How likely is that you would recommend this program to a friend?" value="Maybe">Maybe <br>
+                        <input type="radio" name="How likely is that you would recommend this program to a friend?" value="Notsure">Notsure <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label style="margin-left: 199px;">What do you like most here</label></td>
+                    <td>
+                        <select>
+                            <option selected disabled>select an option</option>
+                            <option>programming</option>
+                            <option>designing</option>
+                            <option>testing</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Things that should be improved in the future (Check all that apply)?</label></td>
+                    <td>
+                        <input type="checkbox">Front-end Projects<br>
+                        <input type="checkbox">Back-end Projects <br>
+                        <input type="checkbox">Data Visualization <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label style="margin-left: 170px;">Any Comments or Suggestions?</label></td>
+                    <td><textarea rows="4"  cols="30" placeholder="Enter your comments here...."></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;"><button type="submit" style="background-color: blue;border-spacing: 1px;">SUBMIT</button></td>
+                </tr>
+            </table></form>
         </div>
-    </section>
-</body>
+    </body>
 </html>
