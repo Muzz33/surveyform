@@ -1,0 +1,26 @@
+1)initializing git in current directory
+    git init 
+2)git configuration
+    git config --global user.name 'username'
+    git config --global user.email 'emailid'
+3)Configuration list
+    git config --list
+4)Checking status of current directory
+    git status
+5)Track all the files and folders
+    git add index.html style.css images     or
+    git add --all                           or
+    git add -A
+6)Commit the files
+    git commit -m "messages"
+7)remote repository
+    git remote add portfolio https://github.com/Muzz33/form.git
+8)  git push portfolio master
+
+
+
+
+
+
+
+https://github.com/Muzz33/form1.git
